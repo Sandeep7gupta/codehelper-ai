@@ -1,0 +1,44 @@
+{
+  "faqs": [
+    {
+      "q": "What is the difference between let, const, and var in JavaScript?",
+      "a": "`var` is function-scoped and hoisted (initialized as undefined). `let` and `const` are block-scoped and live in the temporal dead zone until declared. `const` cannot be reassigned (but objects/arrays it points to are still mutable). Prefer `const` by default, `let` when you need to reassign, and avoid `var` in modern code."
+    },
+    {
+      "q": "How does Python's list comprehension work?",
+      "a": "Syntax: `[expression for item in iterable if condition]`. Example: `[x*x for x in range(10) if x % 2 == 0]` produces squares of even numbers. They are faster and more readable than equivalent for-loops with .append()."
+    },
+    {
+      "q": "What is Big-O notation?",
+      "a": "Big-O describes the upper bound of an algorithm's growth rate as input size n increases. Common classes: O(1) constant, O(log n) logarithmic (binary search), O(n) linear, O(n log n) (mergesort/quicksort avg), O(n^2) (naive nested loops), O(2^n) exponential. It ignores constants and lower-order terms."
+    },
+    {
+      "q": "What is the difference between SQL JOIN types?",
+      "a": "INNER JOIN returns only matching rows from both tables. LEFT JOIN returns all rows from the left table plus matches from the right (NULL where missing). RIGHT JOIN is the mirror. FULL OUTER JOIN returns all rows from both, NULL where no match. CROSS JOIN is a Cartesian product."
+    },
+    {
+      "q": "What is a closure in JavaScript?",
+      "a": "A closure is a function that retains access to variables from its lexical scope even after that scope has finished executing. Example: `function makeCounter(){ let n=0; return () => ++n; }` — the returned function 'closes over' n."
+    },
+    {
+      "q": "How do I handle exceptions in Python?",
+      "a": "Use `try/except/else/finally`. Catch specific exceptions (`except ValueError as e:`) rather than bare `except:`. Use `raise` to re-raise, and `raise NewError(...) from e` to chain. `finally` always runs (cleanup). `else` runs only if no exception occurred."
+    },
+    {
+      "q": "What is the difference between == and === in JavaScript?",
+      "a": "`==` performs type coercion before comparing (`'5' == 5` is true). `===` compares value AND type without coercion (`'5' === 5` is false). Always prefer `===` to avoid surprising coercion bugs."
+    },
+    {
+      "q": "What is REST API?",
+      "a": "REST (Representational State Transfer) is an architectural style for HTTP APIs. Resources are identified by URLs, manipulated via HTTP verbs (GET, POST, PUT, PATCH, DELETE), and responses are stateless. Typically returns JSON. Status codes carry semantics (200 OK, 201 Created, 404 Not Found, 500 Server Error)."
+    },
+    {
+      "q": "What is recursion and when should I use it?",
+      "a": "Recursion is when a function calls itself with a smaller subproblem until reaching a base case. Use it for naturally recursive structures: tree traversal, divide-and-conquer (mergesort), backtracking. Watch for stack overflow on deep recursion — convert to iteration or use tail-call optimization where supported."
+    },
+    {
+      "q": "What is the difference between a stack and a queue?",
+      "a": "Stack is LIFO (Last In First Out) — push/pop from the same end. Used for function calls, undo, DFS. Queue is FIFO (First In First Out) — enqueue at back, dequeue at front. Used for BFS, task scheduling, buffering."
+    }
+  ]
+}

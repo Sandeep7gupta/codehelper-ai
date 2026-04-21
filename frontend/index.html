@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CodeHelper AI — Programming Chatbot</title>
+    <meta name="description" content="Domain-restricted programming chatbot powered by OpenRouter." />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="dark">
+    <div class="app">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="logo">&lt;/&gt;</div>
+          <div>
+            <h1>CodeHelper AI</h1>
+            <p>Programming assistant</p>
+          </div>
+        </div>
+
+        <div class="group">
+          <label>Response style</label>
+          <select id="style">
+            <option value="factual">Factual</option>
+            <option value="creative">Creative</option>
+            <option value="beginner">Beginner-friendly</option>
+          </select>
+        </div>
+
+        <div class="group">
+          <div class="row">
+            <label>Temperature</label>
+            <span id="tempVal" class="mono">0.70</span>
+          </div>
+          <input type="range" id="temperature" min="0" max="1" step="0.05" value="0.7" />
+          <p class="hint">Higher = more random / creative</p>
+        </div>
+
+        <div class="group">
+          <div class="row">
+            <label>Top-p</label>
+            <span id="topPVal" class="mono">0.90</span>
+          </div>
+          <input type="range" id="topP" min="0" max="1" step="0.05" value="0.9" />
+          <p class="hint">Nucleus sampling threshold</p>
+        </div>
+
+        <div class="group toggle">
+          <label for="theme">Dark mode</label>
+          <input type="checkbox" id="theme" checked />
+        </div>
+
+        <button id="clear" class="btn ghost">Clear chat</button>
+        <p class="footer-note">Domain-restricted to programming. FAQ-grounded.</p>
+      </aside>
+
+      <main class="chat">
+        <div id="messages" class="messages">
+          <div class="empty">
+            <h2>Ask me anything about code</h2>
+            <p>I'm restricted to programming, debugging, and software development.</p>
+          </div>
+        </div>
+
+        <form id="form" class="composer">
+          <textarea id="input" rows="1" placeholder="Ask a programming question… (Enter to send, Shift+Enter for newline)"></textarea>
+          <button type="submit" id="send" class="btn primary">Send</button>
+        </form>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
