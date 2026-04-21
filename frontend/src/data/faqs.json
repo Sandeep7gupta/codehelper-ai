@@ -1,0 +1,64 @@
+{
+    "faqs": [
+      {
+        "question": "What is Python used for?",
+        "answer": "Python is used for web development, data science, machine learning, automation, and scripting.",
+        "tags": ["python"],
+        "category": "programming"
+      },
+      {
+        "question": "What is JavaScript?",
+        "answer": "JavaScript is a programming language used to build interactive web applications, both on the frontend and backend.",
+        "tags": ["javascript", "web"],
+        "category": "web"
+      },
+      {
+        "question": "What is React?",
+        "answer": "React is a JavaScript library for building user interfaces using reusable components and a virtual DOM.",
+        "tags": ["javascript", "web"],
+        "category": "web"
+      },
+      {
+        "question": "What is an API?",
+        "answer": "An API (Application Programming Interface) allows different software systems to communicate with each other.",
+        "tags": ["web"],
+        "category": "web"
+      },
+      {
+        "question": "What is a binary search?",
+        "answer": "Binary search is an efficient algorithm that finds an element in a sorted array in O(log n) time by repeatedly dividing the search space.",
+        "tags": ["algorithms"],
+        "category": "algorithms"
+      },
+      {
+        "question": "What is a stack data structure?",
+        "answer": "A stack is a LIFO (Last In First Out) data structure where elements are added and removed from the top.",
+        "tags": ["algorithms"],
+        "category": "data structures"
+      },
+      {
+        "question": "How do I debug code?",
+        "answer": "You can debug code using console logs, breakpoints, step-by-step execution, and analyzing error messages.",
+        "tags": ["debugging"],
+        "category": "debugging"
+      },
+      {
+        "question": "What is a syntax error?",
+        "answer": "A syntax error occurs when code does not follow the correct structure or grammar of the programming language.",
+        "tags": ["debugging"],
+        "category": "debugging"
+      },
+      {
+        "question": "What is HTML and CSS?",
+        "answer": "HTML is used to structure web content, while CSS is used to style and layout that content.",
+        "tags": ["web"],
+        "category": "web"
+      },
+      {
+        "question": "What is asynchronous programming?",
+        "answer": "Asynchronous programming allows tasks to run independently without blocking the main thread, often using promises or async/await.",
+        "tags": ["javascript"],
+        "category": "programming"
+      }
+    ]
+  }

@@ -1,0 +1,16 @@
+# render.yaml — Render.com deployment configuration for CodeHelper AI backend
+
+services:
+  - type: web
+    name: codehelper-ai-backend
+    env: python
+    plan: free
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false          # Set this manually in Render dashboard
+      - key: ALLOWED_ORIGINS
+        value: "*"           # Update to your Vercel URL in production
+      - key: PORT
+        value: "10000"
